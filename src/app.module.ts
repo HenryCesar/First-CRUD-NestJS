@@ -8,7 +8,8 @@ import { MongooseModule } from '@nestjs/mongoose';
 @Module({
   imports: [
     MongooseModule.forRoot(
-      'mongodb+srv://312123:312123@cluster0.r44ia.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+      'mongodb+srv://312123:Znt1f3a5Q4bRj8da@cluster0.r44ia.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+      { useNewUrlParser: true, useUnifiedTopology: true },
     ),
     TasksModule,
   ],
